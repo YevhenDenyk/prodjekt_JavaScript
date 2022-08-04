@@ -1,0 +1,9 @@
+.product-card{
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+}
+.product-image {
+    width: 100%;
+
+}
