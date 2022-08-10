@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80a204aa-8205-41bf-b1e2-66d9a42f4d8e" name="Changes" comment="JS lesson 3">
-      <change afterPath="$PROJECT_DIR$/lesson4/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson4/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson4/main.js" afterDir="false" />
+    <list default="true" id="80a204aa-8205-41bf-b1e2-66d9a42f4d8e" name="Changes" comment="JS lesson 4">
+      <change afterPath="$PROJECT_DIR$/lesson5/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson5/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson6/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson6/maine.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson4/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson4/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +17,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -71,7 +73,12 @@
       <workItem from="1659363722518" duration="6828000" />
       <workItem from="1659553158142" duration="3289000" />
       <workItem from="1659618327048" duration="18000" />
-      <workItem from="1659620767193" duration="4342000" />
+      <workItem from="1659620767193" duration="4365000" />
+      <workItem from="1659719763080" duration="1926000" />
+      <workItem from="1659804100831" duration="4316000" />
+      <workItem from="1659880820382" duration="6672000" />
+      <workItem from="1659978792191" duration="2877000" />
+      <workItem from="1660109791520" duration="366000" />
     </task>
     <task id="LOCAL-00001" summary="JS lesson 1">
       <created>1658676131738</created>
@@ -87,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659379792131</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="JS lesson 4">
+      <created>1659627493317</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659627493317</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +121,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="JS lesson 1" />
     <MESSAGE value="JS lesson 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="JS lesson 3" />
+    <MESSAGE value="JS lesson 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="JS lesson 4" />
   </component>
 </project>
