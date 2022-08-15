@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80a204aa-8205-41bf-b1e2-66d9a42f4d8e" name="Changes" comment="JS lesson 4">
-      <change afterPath="$PROJECT_DIR$/lesson5/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson5/main.js" afterDir="false" />
+    <list default="true" id="80a204aa-8205-41bf-b1e2-66d9a42f4d8e" name="Changes" comment="JS lesson 5">
       <change afterPath="$PROJECT_DIR$/lesson6/index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lesson6/maine.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -43,7 +41,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;js.last.introduce.type&quot;: &quot;CONST&quot;,
+    &quot;js.last.introduce.type&quot;: &quot;LET&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/y.denyk/IdeaProjects/prodjekt_JavaScript/prodjekt_JavaScript.iml&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;,
@@ -79,6 +77,12 @@
       <workItem from="1659880820382" duration="6672000" />
       <workItem from="1659978792191" duration="2877000" />
       <workItem from="1660109791520" duration="366000" />
+      <workItem from="1660110178558" duration="50000" />
+      <workItem from="1660218544401" duration="10485000" />
+      <workItem from="1660307912577" duration="3351000" />
+      <workItem from="1660492499452" duration="5575000" />
+      <workItem from="1660541858882" duration="1800000" />
+      <workItem from="1660581901356" duration="2453000" />
     </task>
     <task id="LOCAL-00001" summary="JS lesson 1">
       <created>1658676131738</created>
@@ -101,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659627493317</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="JS lesson 5">
+      <created>1660110215411</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660110215411</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +133,7 @@
     <MESSAGE value="JS lesson 1" />
     <MESSAGE value="JS lesson 3" />
     <MESSAGE value="JS lesson 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="JS lesson 4" />
+    <MESSAGE value="JS lesson 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="JS lesson 5" />
   </component>
 </project>
