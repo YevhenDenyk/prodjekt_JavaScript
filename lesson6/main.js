@@ -99,198 +99,199 @@
 // }
 
 
-let deckOfCards = [
-    {
-        cardSuit: null,
-        value: 'Joker',
-        color: 'black'
-    },
-    {
-        cardSuit: null,
-        value: 'Joker',
-        color: 'red'
-    },
-    {
-        cardSuit: 'spade',
-        value: 'ace',
-        color: 'black'
-    },
-    {
-        cardSuit: 'clubs',
-        value: 'ace',
-        color: 'black'
-    },
-    {
-        cardSuit: 'diamond',
-        value: 'ace',
-        color: 'red'
-    },
-    {
-        cardSuit: 'heart',
-        value: 'ace',
-        color: 'red'
-    },
-    {
-        cardSuit: 'spade',
-        value: 'king',
-        color: 'black'
-    },
-    {
-        cardSuit: 'clubs',
-        value: 'king',
-        color: 'black'
-    },
-    {
-        cardSuit: 'diamond',
-        value: 'king',
-        color: 'red'
-    },
-    {
-        cardSuit: 'heart',
-        value: 'king',
-        color: 'red'
-    },
-    {
-        cardSuit: 'spade',
-        value: 'queen',
-        color: 'black'
-    },
-    {
-        cardSuit: 'clubs',
-        value: 'queen',
-        color: 'black'
-    },
-    {
-        cardSuit: 'diamond',
-        value: 'queen',
-        color: 'red'
-    },
-    {
-        cardSuit: 'heart',
-        value: 'queen',
-        color: 'red'
-    },
-    {
-        cardSuit: 'spade',
-        value: 'jack',
-        color: 'black'
-    },
-    {
-        cardSuit: 'clubs',
-        value: 'jack',
-        color: 'black'
-    },
-    {
-        cardSuit: 'diamond',
-        value: 'jack',
-        color: 'red'
-    },
-    {
-        cardSuit: 'heart',
-        value: 'jack',
-        color: 'red'
-    },
-    {
-        cardSuit: 'spade',
-        value: '10',
-        color: 'black'
-    },
-    {
-        cardSuit: 'clubs',
-        value: '10',
-        color: 'black'
-    },
-    {
-        cardSuit: 'diamond',
-        value: '10',
-        color: 'red'
-    },
-    {
-        cardSuit: 'heart',
-        value: '10',
-        color: 'red'
-    },
-    {
-        cardSuit: 'spade',
-        value: '9',
-        color: 'black'
-    },
-    {
-        cardSuit: 'clubs',
-        value: '9',
-        color: 'black'
-    },
-    {
-        cardSuit: 'diamond',
-        value: '9',
-        color: 'red'
-    },
-    {
-        cardSuit: 'heart',
-        value: '9',
-        color: 'red'
-    },
-    {
-        cardSuit: 'spade',
-        value: '8',
-        color: 'black'
-    },
-    {
-        cardSuit: 'clubs',
-        value: '8',
-        color: 'black'
-    },
-    {
-        cardSuit: 'diamond',
-        value: '8',
-        color: 'red'
-    },
-    {
-        cardSuit: 'heart',
-        value: '8',
-        color: 'red'
-    },
-    {
-        cardSuit: 'spade',
-        value: '7',
-        color: 'black'
-    },
-    {
-        cardSuit: 'clubs',
-        value: '7',
-        color: 'black'
-    },
-    {
-        cardSuit: 'diamond',
-        value: '7',
-        color: 'red'
-    },
-    {
-        cardSuit: 'heart',
-        value: '7',
-        color: 'red'
-    },
-    {
-        cardSuit: 'spade',
-        value: '6',
-        color: 'black'
-    },
-    {
-        cardSuit: 'clubs',
-        value: '6',
-        color: 'black'
-    },
-    {
-        cardSuit: 'diamond',
-        value: '6',
-        color: 'red'
-    },
-    {
-        cardSuit: 'heart',
-        value: '6',
-        color: 'red'
-    }
-]
+// let deckOfCards = [
+//     {
+//         cardSuit: null,
+//         value: 'Joker',
+//         color: 'black'
+//     },
+//     {
+//         cardSuit: null,
+//         value: 'Joker',
+//         color: 'red'
+//     },
+//     {
+//         cardSuit: 'spade',
+//         value: 'ace',
+//         color: 'black'
+//     },
+//     {
+//         cardSuit: 'clubs',
+//         value: 'ace',
+//         color: 'black'
+//     },
+//     {
+//         cardSuit: 'diamond',
+//         value: 'ace',
+//         color: 'red'
+//     },
+//     {
+//         cardSuit: 'heart',
+//         value: 'ace',
+//         color: 'red'
+//     },
+//     {
+//         cardSuit: 'spade',
+//         value: 'king',
+//         color: 'black'
+//     },
+//     {
+//         cardSuit: 'clubs',
+//         value: 'king',
+//         color: 'black'
+//     },
+//     {
+//         cardSuit: 'diamond',
+//         value: 'king',
+//         color: 'red'
+//     },
+//     {
+//         cardSuit: 'heart',
+//         value: 'king',
+//         color: 'red'
+//     },
+//     {
+//         cardSuit: 'spade',
+//         value: 'queen',
+//         color: 'black'
+//     },
+//     {
+//         cardSuit: 'clubs',
+//         value: 'queen',
+//         color: 'black'
+//     },
+//     {
+//         cardSuit: 'diamond',
+//         value: 'queen',
+//         color: 'red'
+//     },
+//     {
+//         cardSuit: 'heart',
+//         value: 'queen',
+//         color: 'red'
+//     },
+//     {
+//         cardSuit: 'spade',
+//         value: 'jack',
+//         color: 'black'
+//     },
+//     {
+//         cardSuit: 'clubs',
+//         value: 'jack',
+//         color: 'black'
+//     },
+//     {
+//         cardSuit: 'diamond',
+//         value: 'jack',
+//         color: 'red'
+//     },
+//     {
+//         cardSuit: 'heart',
+//         value: 'jack',
+//         color: 'red'
+//     },
+//     {
+//         cardSuit: 'spade',
+//         value: '10',
+//         color: 'black'
+//     },
+//     {
+//         cardSuit: 'clubs',
+//         value: '10',
+//         color: 'black'
+//     },
+//     {
+//         cardSuit: 'diamond',
+//         value: '10',
+//         color: 'red'
+//     },
+//     {
+//         cardSuit: 'heart',
+//         value: '10',
+//         color: 'red'
+//     },
+//     {
+//         cardSuit: 'spade',
+//         value: '9',
+//         color: 'black'
+//     },
+//     {
+//         cardSuit: 'clubs',
+//         value: '9',
+//         color: 'black'
+//     },
+//     {
+//         cardSuit: 'diamond',
+//         value: '9',
+//         color: 'red'
+//     },
+//     {
+//         cardSuit: 'heart',
+//         value: '9',
+//         color: 'red'
+//     },
+//     {
+//         cardSuit: 'spade',
+//         value: '8',
+//         color: 'black'
+//     },
+//     {
+//         cardSuit: 'clubs',
+//         value: '8',
+//         color: 'black'
+//     },
+//     {
+//         cardSuit: 'diamond',
+//         value: '8',
+//         color: 'red'
+//     },
+//     {
+//         cardSuit: 'heart',
+//         value: '8',
+//         color: 'red'
+//     },
+//     {
+//         cardSuit: 'spade',
+//         value: '7',
+//         color: 'black'
+//     },
+//     {
+//         cardSuit: 'clubs',
+//         value: '7',
+//         color: 'black'
+//     },
+//     {
+//         cardSuit: 'diamond',
+//         value: '7',
+//         color: 'red'
+//     },
+//     {
+//         cardSuit: 'heart',
+//         value: '7',
+//         color: 'red'
+//     },
+//     {
+//         cardSuit: 'spade',
+//         value: '6',
+//         color: 'black'
+//     },
+//     {
+//         cardSuit: 'clubs',
+//         value: '6',
+//         color: 'black'
+//     },
+//     {
+//         cardSuit: 'diamond',
+//         value: '6',
+//         color: 'red'
+//     },
+//     {
+//         cardSuit: 'heart',
+//         value: '6',
+//         color: 'red'
+//     }
+// ]
+
 // - знайти піковий туз
 // const find = deckOfCards.find(value => value.cardSuit === 'diamond' && value.value === 'ace');
 // console.log(find);
@@ -321,25 +322,25 @@ let deckOfCards = [
 //     hearts:[],
 //     clubs:[]
 // }
-let reduce = deckOfCards.reduce((accum,card)=>{
-    if (card.cardSuit === 'spade'){
-        accum.spades.push(card);
-    } else if(card.cardSuit==='diamond') {
-        accum.diamonds.push(card);
-    }else if (card.cardSuit === 'clubs'){
-        accum.clubs.push(card);
-    }else if (card.cardSuit === 'heart'){
-        accum.hearts.push(card);
-    }
-    return accum;
-
-},{
-    spades:[],
-    diamonds:[],
-    hearts:[],
-    clubs:[]
-});
-console.log(reduce);
+// let reduce = deckOfCards.reduce((accum,card)=>{
+//     if (card.cardSuit === 'spade'){
+//         accum.spades.push(card);
+//     } else if(card.cardSuit==='diamond') {
+//         accum.diamonds.push(card);
+//     }else if (card.cardSuit === 'clubs'){
+//         accum.clubs.push(card);
+//     }else if (card.cardSuit === 'heart'){
+//         accum.hearts.push(card);
+//     }
+//     return accum;
+//
+// },{
+//     spades:[],
+//     diamonds:[],
+//     hearts:[],
+//     clubs:[]
+// });
+// console.log(reduce);
 
 
 
@@ -370,7 +371,7 @@ console.log(reduce);
 // arr.pop() - видалити елемент з кінця масиву, видалений елемент повертається
 // arr.unshift() - додати новий елемент з початку
 // arr.shift() - видалит елемент з початку масиву, видалений елемент повертається
-// arr.join(;) - об''єднати всі елементи масиву, в дужках зається розподілювач
+// arr.join(;) - об''єднати всі елементи масиву, в дужках задається розподілювач
 // arr.concat(nums) - об''єднати 2 масиви, до першого додається в кінці другий, що в дужках, створюється новий масив
 // arr.reverse() - реверснути масив, всі елементи міняють порядок
 // arr.slice(1, 6) - обрізати масив, вирізані елементи повертаються у вигляді нового масву
@@ -383,15 +384,18 @@ console.log(reduce);
 // Функції масивів на основі колбеків
 //
 // users.forEach(value => console.log(value)) - виконає функцію для кожного елементу масиву (інтерує масив та виконує функцію вказану в дужках)
+//
 // let filter = users.filter(value => value.status) - фільтрує, значення виводиться в окремий масив
+//
 // let map = users.map((user, index) => ({name: user.name, age: user.age, status: user.status, id: index + 1}))
 //                        - інтерує масив, додає нове значення та виводить у новий масив
+//
 // let find = users.find(value => value.name === 'max'); - функція перевіряє наявність елементу, знаходить перший і зупиняється, виводить булове значення
 //           console.log(find);
 // users.every(value =>value.status) - перевіряє статуси в масиві, якщо ВСІ статуси в масиві "тру" виводить булове значення 'тру'
 // users.some(value =>value.status) - перевіряє статуси в масиві, якщо ХОЧ ОДИН статус в масиві "тру" виводить булове значення 'тру'
 
-// // users.sort((user1, user2) => user1.age - user2.age);
+// // let sort = users.sort((user1, user2) => user1.age - user2.age);
 // // let sort = users.sort((user1, user2) => {
 // //     if (user1.name > user2.name) {
 // //         return 1;
