@@ -30,10 +30,13 @@ userDiv.appendChild(userDetailsDiv);
             let qwe = user[userKey];
 
             if (typeof qwe !== "object") {
+
                 const userKeyDiv = document.createElement('div');
-                userKeyDiv.innerText = `${userKey} --- ${qwe}`;
+                userKeyDiv.innerText = `${userKey} --- ${user[userKey]}`;
                 userDetailsDiv.appendChild(userKeyDiv);
+
             } else {
+
                 for (const qweKey in qwe) {
                     const userKeyDiv = document.createElement('div');
                     userKeyDiv.innerText = `${qweKey} --- ${qwe[qweKey]}`;
