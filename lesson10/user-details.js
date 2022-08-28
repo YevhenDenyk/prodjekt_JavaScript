@@ -52,16 +52,6 @@ userDiv.appendChild(userDetailsDiv);
 
 
 
- // fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
-    // .then(response => response.json())
-    // .then(user => {
-    //     // console.log(user);
-    //     for (const userKey in user) {
-    //         const userKeyDiv = document.createElement('div');
-    //         userKeyDiv.innerText = `${userKey} --- ${user[userKey]}`;
-    //         userDetailsDiv.appendChild(userKeyDiv);
-    //     }
-    // })
 
 
 // Якась ххх через рекурсію
@@ -75,9 +65,11 @@ userDiv.appendChild(userDetailsDiv);
 //                 let qwe = user[userKey];
 //
 //                 if (typeof qwe !== "object") {
+//
 //                     const userKeyDiv = document.createElement('div');
 //                     userKeyDiv.innerText = `${userKey} --- ${qwe}`;
 //                     userDetailsDiv.appendChild(userKeyDiv);
+//
 //                 } else {
 //                     explorer(qwe)
 //                 }
@@ -86,3 +78,13 @@ userDiv.appendChild(userDetailsDiv);
 //         }
 //     });
 
+ // fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+    // .then(response => response.json())
+    // .then(user => {
+    //     // console.log(user);
+    //     for (const userKey in user) {
+    //         const userKeyDiv = document.createElement('div');
+    //         userKeyDiv.innerText = `${userKey} --- ${user[userKey]}`;
+    //         userDetailsDiv.appendChild(userKeyDiv);
+    //     }
+    // })
