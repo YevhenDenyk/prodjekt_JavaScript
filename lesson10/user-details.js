@@ -19,25 +19,67 @@ let id = url.searchParams.get('id');
 
 let userDiv = document.querySelector('#userDiv');
 
-const olUserDetails = document.createElement('ol');
-userDiv.appendChild(olUserDetails);
+const userDetailsDiv = document.createElement('div');
+userDiv.appendChild(userDetailsDiv);
 
-
-fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
     .then(response => response.json())
     .then(user => {
-        console.log(user);
+        for (const userKey in user) {
 
-        for (const usersKey in user) {
+            let qwe = user[userKey];
 
-            const li = document.createElement('li');
-            li.innerText = `${usersKey} --- ${user[usersKey]}`;
-            olUserDetails.appendChild(li);
+            if (typeof qwe !== "object") {
+                const userKeyDiv = document.createElement('div');
+                userKeyDiv.innerText = `${userKey} --- ${qwe}`;
+                userDetailsDiv.appendChild(userKeyDiv);
+            } else {
+                for (const qweKey in qwe) {
+                    const userKeyDiv = document.createElement('div');
+                    userKeyDiv.innerText = `${qweKey} --- ${qwe[qweKey]}`;
+                    userDetailsDiv.appendChild(userKeyDiv);
+                }
+
+            }
         }
-
-        // const liId = document.createElement('li');
-        // liId.innerText = `id --- ${user.id}`
-        // olUserDetails.appendChild(liId);
-
-
     })
+
+
+
+
+
+
+ // fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+    // .then(response => response.json())
+    // .then(user => {
+    //     // console.log(user);
+    //     for (const userKey in user) {
+    //         const userKeyDiv = document.createElement('div');
+    //         userKeyDiv.innerText = `${userKey} --- ${user[userKey]}`;
+    //         userDetailsDiv.appendChild(userKeyDiv);
+    //     }
+    // })
+
+
+// Якась ххх через рекурсію
+
+// fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+//     .then(response => response.json())
+//     .then(user => {
+//         function explorer(user) {
+//             for (const userKey in user) {
+//
+//                 let qwe = user[userKey];
+//
+//                 if (typeof qwe !== "object") {
+//                     const userKeyDiv = document.createElement('div');
+//                     userKeyDiv.innerText = `${userKey} --- ${qwe}`;
+//                     userDetailsDiv.appendChild(userKeyDiv);
+//                 } else {
+//                     explorer(qwe)
+//                 }
+//
+//             }
+//         }
+//     });
+
