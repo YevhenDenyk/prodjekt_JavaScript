@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80a204aa-8205-41bf-b1e2-66d9a42f4d8e" name="Changes" comment="JS lesson 7">
-      <change afterPath="$PROJECT_DIR$/lesson6/asdsadsad.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson8/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson8/main.js" afterDir="false" />
+    <list default="true" id="80a204aa-8205-41bf-b1e2-66d9a42f4d8e" name="Changes" comment="JS lesson 8">
+      <change afterPath="$PROJECT_DIR$/lesson10/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson10/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson10/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson10/post-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson10/user-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson10/user-details.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson9/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson9/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson6/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson6/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson4/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson4/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson6/asdsadsad.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson7/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson7/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +23,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -91,7 +98,11 @@
       <workItem from="1660749017455" duration="8939000" />
       <workItem from="1660847305604" duration="1654000" />
       <workItem from="1661020117469" duration="603000" />
-      <workItem from="1661059384363" duration="7257000" />
+      <workItem from="1661059384363" duration="7940000" />
+      <workItem from="1661434583434" duration="9966000" />
+      <workItem from="1661539615758" duration="3978000" />
+      <workItem from="1661612801796" duration="10756000" />
+      <workItem from="1661670951343" duration="9842000" />
     </task>
     <task id="LOCAL-00001" summary="JS lesson 1">
       <created>1658676131738</created>
@@ -142,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660591634869</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="JS lesson 8">
+      <created>1661107547548</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1661107547548</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +184,7 @@
     <MESSAGE value="JS lesson 5" />
     <MESSAGE value="JS lesson 6" />
     <MESSAGE value="JS lesson 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="JS lesson 7" />
+    <MESSAGE value="JS lesson 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="JS lesson 8" />
   </component>
 </project>
