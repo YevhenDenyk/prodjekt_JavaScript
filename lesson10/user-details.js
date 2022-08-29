@@ -109,7 +109,7 @@ let postUserButton = document.createElement('button');
 postUserButton.innerText = 'post of current user'
 userDiv.appendChild(postUserButton);
 postUserButton.onclick =(e)=>{
-    e.preventDefault()
+    e.preventDefault()  //// --- не розібрався що це таке, але без нього не працює.
     fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
         .then(response => response.json())
         .then(post=>{
