@@ -1,0 +1,117 @@
+/*//      index.html - всі блоки з user - по 2 в рядок. кнопки/посилання розташувати під інформацією про user.*/
+
+/*//     user-details.html - блок з інфою про user зверху сторінки. Кнопка нижчє, на 90% ширини сторінки, по центру.*/
+/*//     блоки з короткою іфною про post - в ряд по 5 .*/
+
+/*//     post-details.html - блок з інфою про пост зверху. Коментарі - по 4 в ряд.*/
+/*//     Всі елементи котрі характеризують users, posts, comments візуалізувати, так, щоб було видно що це блоки (дати фон. марджини і тд)*/
+
+body{
+background: azure;
+}
+
+div{
+    margin: 3px;
+}
+
+h1{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    color: darkblue;
+    /*border: solid 2px red;*/
+}
+h3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+button{
+    width: 90%;
+}
+
+.item{
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.userDivP1 {
+    width: 45%;
+    height: 200px;
+    border: solid 2px black;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+a{
+    width: 150px;
+    height: 50px;
+    margin: 50px;
+    background: mediumturquoise;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+/*     user-details.html */
+
+
+.userDetailsDiv{
+    box-sizing: border-box;
+    padding: 20px;
+    /*font-size: 18px;*/
+}
+.userPost{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.postDiv {
+    width: 17%;
+    height: 170px;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    margin: 10px;
+
+    background: #dcfcfc;
+    border-radius: 10px;
+}
+.buttonDiv{
+    display: flex;
+    justify-content: center;
+}
+
+/*post-details.html*/
+
+.commentsToPost{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.detailPost {
+    background: beige;
+    width: 500px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.commentDiv{
+    background: beige;
+    width: 500px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+}
