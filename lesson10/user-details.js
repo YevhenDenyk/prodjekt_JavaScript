@@ -98,10 +98,12 @@ postUserButton.onclick =(e)=>{
                 postUserDiv.appendChild(postDiv)
 
                 const titleUserPost = document.createElement('div');
+                titleUserPost.className = 'titleUserPost'
                 titleUserPost.innerText = `${postKey.id}:  ${postKey.title}`;
                 // postUserDiv.appendChild(titleUserPost);
 
                 const linkPost = document.createElement('button');
+                // linkPost.className = 'linkPost'
                 linkPost.onclick = () => {location.href = `post-details.html?id=${postKey.id}`}
                 linkPost.innerText = 'post details';
                 // postUserDiv.appendChild(linkPost);
@@ -110,4 +112,5 @@ postUserButton.onclick =(e)=>{
 
             }
         })
+    postUserButton.disabled=true
     }

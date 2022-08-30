@@ -7,15 +7,19 @@
 
 const htmlDivElement = document.createElement('div');
 htmlDivElement.classList.add('item');
+
 document.body.appendChild(htmlDivElement);
+
 
 fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => response.json())
     .then( users => users.forEach(user=>{
         let divUser = document.createElement('div');
         divUser.className = 'userDivP1';
-        // divUser.innerText = `${user.id} ${user.name}`;
-        divUser.innerText = `${user.name}`;
+
+        const divUserName = document.createElement('div');
+        divUserName.className = 'divUserName'
+        divUserName.innerText = `${user.name}`;
 
 
         const linkUser = document.createElement('a');
@@ -24,8 +28,9 @@ fetch('https://jsonplaceholder.typicode.com/users')
         // linkUser.onclick = () => {location.href = `user-details.html?id=${user.id}`}
         linkUser.innerText = 'user details';
         linkUser.className = 'linkUser'
-        divUser.appendChild(linkUser);
 
+
+        divUser.append(divUserName,linkUser);
         htmlDivElement.appendChild(divUser);
         })
     );
