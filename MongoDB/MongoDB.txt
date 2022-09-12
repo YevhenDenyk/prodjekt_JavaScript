@@ -1,0 +1,301 @@
+db.users.find()
+db.users.insertOne({car:'BMV', age: 45})
+// Запити
+db.users.find({gender:'male',rating:5})
+
+// Відключати поля або витягати якісь основні
+db.users.find(
+    {gender:'male', rating: 5},
+    {_id:0, age:0,address:0}
+    );
+db.users.find(
+    {gender:'male', rating: 5},
+    {name:1,address:1,gender:1, _id:0}
+    )
+
+//пошук по ід
+db.users.find({_id:ObjectId('631a3857338f6f545d2b3838')})
+
+// використання пошуку з 'or'
+db.users.find(
+    {$or:[
+            {rating:2},
+            {rating:5},
+            {age:22}
+        ]}
+    )
+
+//або
+db.users.find(
+    {$and:[
+            {rating:2},
+            {age:34}
+        ]}
+    )
+
+//вибір з проміжку
+db.users.find({age: {$in:[12, 25, 35, 42]}})
+db.users.find({age: {$nin:[12, 25, 35, 42]}})
+
+//Знайти юзерів в яких перша буква А
+db.users.find({name:/^A/})
+db.users.find({name:/^a/i})
+
+//Знайти у кого остання буква 'а'
+db.users.find({name:/a$/i})
+
+//пропустити декілька символів
+db.users.find({name:/^.{2}t/i})
+
+//знайти щоб була хоч одна буква
+db.users.find({name:/.*v.*/i})
+
+db.users.find({name:/^v.*a$/i})
+
+//сортувати по полях
+db.users.find().sort({rating:1})
+db.users.find().sort({rating:-1})
+db.users.find().sort({rating:-1, name:1})
+
+//менше
+db.users.find({age:{$lt:22}})
+
+// менше або доівнює
+db.users.find({age:{$lte:22}})
+
+//більше
+db.users.find({age:{$gt:22}})
+
+//більше або дорівнює
+db.users.find({age:{$gte:22}})
+
+//не дорівнює
+db.users.find({age:{$ne:25}})
+
+
+db.users.find(
+    {$and:[
+            {age:{$gte:25}},
+            {age:{$lte:45}}
+        ]}
+    )
+
+// ліміти
+db.users.find().limit(2)
+
+//скіпи
+db.users.find().limit(2).skip(3)
+
+// апдейти
+db.users.updateOne(
+    {_id:ObjectId('631a3857338f6f545d2b3835')},
+    {$set:{name:'Kokos'}}
+    )
+
+db.users.updateMany(
+    {gender:'male'},
+    {$set:{gender:'animal'}}
+    )
+
+//Знайти всіх хто мають поле або не мають його
+db.users.find({parents:{$exists:1}})
+db.users.find({parents:{$exists:0}})
+
+//
+db.users.updateOne(
+    {_id:ObjectId("631a3920338f6f545d2b383e")},
+    {$set:{parents:null}}
+    )
+
+//Знайти всіх у кого є елемент у масиві
+db.users.find(
+    {studying:'java'}
+    )
+
+// Знайти всіх у кого 2 елемент у масиві (відлік починається з 0)
+users.find(
+    {'studying.1':'java'}
+    )
+
+//видалення
+db.users.deleteOne({_id:ObjectId('631a3920338f6f545d2b383e')})
+
+//шукати по вкладеності
+db.users.find({"address.house":{$gt:20}})
+
+//шукати по кількості вкладених об'єктів
+db.users.find({parents:{$size:1}})
+
+//за умови що в об'єкті 2 елемента замінити їх на
+db.users.updateMany({parents:{$size:2}},{$set:{'parents.$[]':'alalal'}})
+
+//додати до масиву об'єкт
+db.users.updateOne({_id:ObjectId('631a3857338f6f545d2b383a')},{$push:{studying:'js'}})
+
+//видалити з масиву об'єкт
+db.users.updateOne({_id:ObjectId('631a3857338f6f545d2b383a')},{$pull:{studying:'js'}})
+
+// переписати це все замість додавання як було вище
+db.users.updateOne({_id:ObjectId('631a3857338f6f545d2b383a')},{$set:{studying:['js','python']}})
+
+/Агрегатні функції
+//Групування, т вирахувати кількість однакових згрупованих,
+db.teacher.aggregate([
+    {
+        $group:{
+            _id:'$lesson',
+            countOfTeacher:{$sum:1},
+            minPayment:{$min:'$payment'},
+            max:{$max:'$payment'},
+            avg:{$avg:'$payment'},
+            sumMoney:{$sum:'$payment'}
+        }
+    }
+])
+
+//Групування, сортування, перейменовування полів
+db.teacher.aggregate([
+    {
+        $group:{
+            _id:'$lesson',
+            count:{$sum:1}
+        }
+    },
+    {
+        $sort:{
+            count:-1
+        }
+    },
+    {
+        $project:{
+            lesson:'$_id',
+            _id:0,
+            count:1
+        }
+    }
+])
+
+
+//З'єднання таблиць
+db.teacher.aggregate([
+    {
+        $match:{
+            class_curator:{$gt:5}
+        }
+    },
+    {
+        $lookup:{
+            from:'students',
+            localField:'class_curator',
+            foreignField: 'class',
+            as: 'myStydents'
+        }
+    },
+    {
+        $limit:2
+    },
+    {
+        $skip:0
+    }
+    // {
+    //     $match:{
+    //         'myStydents.name': 'Bob'
+    //     }
+    // }
+
+])
+
+//Розбити масив студентів що прив'язані до вчителя, і створити 1 вчитель 1 студент, вчитель продублюється
+db.teacher.aggregate([
+    {
+        $match:{
+            class_curator:{$gt:5}
+        }
+    },
+    {
+        $lookup:{
+            from:'students',
+            localField:'class_curator',
+            foreignField: 'class',
+            as: 'myStydents'
+        }
+    },
+    {
+        $unwind:'$myStydents'
+    },
+    {
+        $unwind:'$myStydents.parents'
+    },
+    {
+        $match: {'myStydents.parents.profession':'doctor'}
+    },
+    {
+        $count:'DoctorCount'
+    }
+])
+
+// Щоб у полі були обов'язково обидва і більше значень у масиві
+db.students.find({lessons:{$all:['mathematics','english']}})
+
+// Знайти обов'язково щоб відповідний елемент масиву був саме таким
+db.students.find({'lessons.0':'english'})
+
+//Повертає любе поле яке нам потрібно з масиву об'єктів, але одне!
+db.students.findOne({'lessons.0':'english'}).name
+
+// Хочу бачити в одного студента тільки по 2 предмета, не більше, інші проігнорувати
+db.students.find({}, {lessons:{$slice:2}})
+
+//запушити масив об'єктів, до існуючого масиву в кінець
+db.students.updateOne(
+    {_id:ObjectId('631b21df983aa91f5beba4a6')},
+    {$push:{lessons:{$each:["german",'basic','english']}}}
+    )
+
+
+//видалити конкретне значення з масиву за індексом, запише значення NULL
+db.students.updateOne(
+    {_id:ObjectId('631b21df983aa91f5beba4a6')},
+    {$unset:{"lessons.1":1}}
+    )
+
+// видалити з лесоннів NULL
+db.students.updateOne(
+    {_id:ObjectId('631b21df983aa91f5beba4a6')},
+    {$pull:{lessons:null}}
+    )
+
+//видалити останній елемент масиву
+db.students.updateOne(
+    {_id:ObjectId('631b21df983aa91f5beba4a6')},
+    {$pop:{lessons:1}}
+    )
+//видалити перший елемент масиву
+db.students.updateOne(
+    {_id:ObjectId('631b21df983aa91f5beba4a6')},
+    {$pop:{lessons:-1}}
+    )
+
+// не додавати елементи до масиву якщо вони дублюються, а додавати тільки ті яких не має
+db.students.updateOne(
+    {_id:ObjectId('631b21df983aa91f5beba4a6')},
+    {$addToSet:{lessons:{$each:["german",'basic','english','js']}}}
+    )
+
+// Порахувати кількість батьків та вивести в окреме поле їх кількість
+db.students.aggregate([
+    {
+        $addFields:{
+            countOfParents:{$cond:{if:{$isArray:'$parents'}, then:{$size:'$parents'}, else:0}}
+        }
+    }
+])
+
+// Фільтри масивів
+db.students.updateMany(
+    {parents:{$exists:1}, 'parents.profession':null},
+    {$set:{'parents.$[item].profession':'waiter'}},
+    {'arrayFilters':[{'item.profession':null}]}
+)
+
+

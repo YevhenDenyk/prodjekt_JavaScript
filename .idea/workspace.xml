@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80a204aa-8205-41bf-b1e2-66d9a42f4d8e" name="Changes" comment="fix css">
-      <change beforePath="$PROJECT_DIR$/lesson10/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/lesson10/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MongoDB/MongoDB.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MongoDB/resolve1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MongoDB/resolve2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SQL/MySQL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SQL/resolve1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SQL/resolve2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -32,24 +38,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;js.last.introduce.type&quot;: &quot;LET&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/y.denyk/IdeaProjects/prodjekt_HTLM&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;copyright&quot;,
-    &quot;two.files.diff.last.used.file&quot;: &quot;C:/Users/y.denyk/IdeaProjects/prodjekt_JavaScript/prodjekt_JavaScript.iml&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "js.last.introduce.type": "LET",
+    "last_opened_file_path": "C:/Users/y.denyk/OneDrive/Рабочий стол/JS-mini-project-master",
+    "list.type.of.created.stylesheet": "CSS",
+    "settings.editor.selected.configurable": "copyright",
+    "two.files.diff.last.used.file": "C:/Users/y.denyk/IdeaProjects/prodjekt_JavaScript/prodjekt_JavaScript.iml"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;module&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "module"
+    ],
+    "DatabaseDriversLRU": [
+      "mysql",
+      "mongo"
     ]
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -93,7 +103,20 @@
       <workItem from="1661612801796" duration="10756000" />
       <workItem from="1661670951343" duration="27246000" />
       <workItem from="1661755737261" duration="27576000" />
-      <workItem from="1661841540800" duration="2835000" />
+      <workItem from="1661841540800" duration="2943000" />
+      <workItem from="1661971566825" duration="1531000" />
+      <workItem from="1662039163469" duration="8412000" />
+      <workItem from="1662132304633" duration="7360000" />
+      <workItem from="1662275958769" duration="16000" />
+      <workItem from="1662302397419" duration="7889000" />
+      <workItem from="1662397133214" duration="4543000" />
+      <workItem from="1662575713479" duration="975000" />
+      <workItem from="1662645216681" duration="860000" />
+      <workItem from="1662662457861" duration="6535000" />
+      <workItem from="1662710552573" duration="19308000" />
+      <workItem from="1662828015104" duration="4447000" />
+      <workItem from="1662905391945" duration="3636000" />
+      <workItem from="1662916959727" duration="1089000" />
     </task>
     <task id="LOCAL-00001" summary="JS lesson 1">
       <created>1658676131738</created>
@@ -207,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661845362840</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fix css">
+      <created>1661845601813</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1661845601813</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
